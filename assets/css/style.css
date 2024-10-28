@@ -1,0 +1,60 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+/*
+  nav background color: #f3f2ec;
+  hover link navbar color : #e1ac56;
+  navbar button border #e1e1e1;
+  arrow color in silder #8f8f8f;
+  read more button color #c4a890;
+  brands section background color #edebe4;
+  Features section books title color #856923;
+  popular books card book background color ##EFEEE8;
+  links on hover #8f7b38
+*/
+.logo{
+    width:140px;
+}
+.navbar{
+    background-color:#f3f2ec !important;
+}
+.navbar-nav > li > a:hover{
+    color:#e1ac56;
+}
+.hero{
+  height: 100vh !important;
+}
+.carousel-inner .carousel-item img{
+    height:567px;
+}
+.btn-outline-secondary{
+    background-color: white !important;
+    border-color:#c4a890 !important; ;
+    color:#c4a890 !important;
+    border-radius:0 !important;
+}
+.btn-outline-secondary:hover{
+    background-color:#c4a890 !important;
+    color:white !important;
+}
+.brands,.best-selling-book{
+    background-color: #edebe4;
+}
+.cards-container{
+    border-bottom: 1px solid #c4a890 !important;
+}
+
+.featured-books .container .cards-container .card img{
+    background-color:#efeee8;
+}
+
+.best-selling-image-box{
+    border:8px solid white !important;
+}
+.card-img-top{
+    width: 220px !important;
+    height:320px !important;
+    border: 30px solid #efeee8;
+}
