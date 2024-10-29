@@ -1,6 +1,4 @@
 
-// fetch('https://wolnelektury.pl/api/books/studnia-i-wahadlo/?format=json')
-//  .then(response => response.json())
 
 fetch('https://wolnelektury.pl/api/books/studnia-i-wahadlo/?format=json')
   .then(response => response.json())
@@ -25,10 +23,8 @@ fetch('https://wolnelektury.pl/api/books/studnia-i-wahadlo/?format=json')
     const cardsContainer = document.querySelector('.cards-container');
     const cardTemplate = document.querySelector('.card'); // Get the single card template
 
-    // Clear the initial card from HTML to avoid duplication
     cardsContainer.innerHTML = '';
 
-    // Loop through the last four books and populate cards
     lastFourBooks.forEach(book => {
       // Clone the card template
       const card = cardTemplate.cloneNode(true);
