@@ -1,8 +1,33 @@
+.pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-family: pt-serif-regular;
 }
+
 /*
   nav background color: #f3f2ec;
   hover link navbar color : #e1ac56;
@@ -14,6 +39,9 @@
   popular books card book background color ##EFEEE8;
   links on hover #8f7b38
 */
+.hero img{
+    height: 500px !important;;
+}
 .logo{
     width:140px;
 }
@@ -23,11 +51,18 @@
 .navbar-nav > li > a:hover{
     color:#e1ac56;
 }
-.hero{
-  height: 100vh !important;
+
+@media(min-width:768px){
+    .hero{
+        height: 100vh !important;
+    }
 }
 .carousel-inner .carousel-item img{
     height:567px;
+}
+.carsosel .carsosel-inner .carousel-item .container .row img{
+    width:22.8rem;
+    height:35.4rem;
 }
 .btn-outline-secondary{
     background-color: white !important;
@@ -39,7 +74,7 @@
     background-color:#c4a890 !important;
     color:white !important;
 }
-.brands,.best-selling-book{
+.brands,.best-selling-book ,.subscribe{
     background-color: #edebe4;
 }
 .cards-container{
@@ -58,3 +93,41 @@
     height:320px !important;
     border: 30px solid #efeee8;
 }
+.featured-books .container .cards-container .card .card-body .card-title{
+    color:#856923;
+    font-size: 20px;
+}
+.popular-books .container .cards-container2 .card-body2 .card-title2{
+    color:#856923;
+    font-size: 20px;
+}
+.card-img-top2{
+    width: 220px !important;
+    height:320px !important;
+    border: 30px solid #efeee8;
+}
+.email{
+    border-style: none ;
+    border-bottom: 1px solid black;
+    background-color:#edebe4;
+}
+
+.popular-books .container ul li a:hover{
+    border-bottom: 3px solid #856923;
+}
+.footer .container .row ul li a:hover {
+    color: #e1ac56 !important; 
+}
+.temp{
+    color:#e1ac56;
+}
+footer .container ul li a:hover{
+    color: #e1ac56 !important; 
+}
+.rights{
+    border-top: 1px solid #edebe4;
+}
+.best-selling-book span ,.subscribe span{
+    border-bottom: 3px solid #856923;
+}
+

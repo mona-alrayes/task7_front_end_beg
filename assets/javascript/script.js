@@ -43,3 +43,30 @@ fetch('https://wolnelektury.pl/api/books/studnia-i-wahadlo/?format=json')
     });
   })
   .catch(error => console.error('Error fetching books:', error));
+
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch('https://wolnelektury.pl/api/authors/adam-mickiewicz/kinds/liryka/parent_books/?format=json')
+      .then(response => response.json())
+      .then(books => {
+        const cardsContainer = document.querySelector('.cards-container2');
+        const cardTemplate = document.querySelector('.card-template2'); // Get the card template
+        const selectedBooks = books.slice(0, 8); // Select the first 8 books
+        
+        selectedBooks.forEach(book => {
+          // Clone the template card
+          const card = cardTemplate.cloneNode(true);
+          card.style.display = "block"; // Make the card visible
+          card.classList.remove('card-template2'); // Remove the template class
+          
+          // Set the book details
+          card.querySelector('.card-img-top2').src = book.simple_thumb || 'placeholder.jpg';
+          card.querySelector('.card-title2').textContent = book.title;
+          card.querySelector('.card-author2').textContent = book.author;
+          
+          // Append the card to the container
+          cardsContainer.appendChild(card);
+        });
+      })
+      .catch(error => console.error('Error fetching books:', error));
+  });
+  
